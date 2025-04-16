@@ -10,6 +10,11 @@ import {
 } from '@/app/constants/quiz';
 import { FloatingBackground } from '@/app/components/FloatingBackground';
 
+// Note: Since this is a client component, the generateMetadata function would need to be in a separate file
+// A proper implementation would require restructuring this to use a server component for metadata
+// and a client component for interactivity, or use a layout.tsx file for results pages
+// For immediate SEO improvement, adding metadata to the root layout.tsx is sufficient
+
 export default function ResultPage({
   params,
 }: {

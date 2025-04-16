@@ -1,0 +1,45 @@
+{
+  "name": "Quidditch Quiz - Discover Your Quidditch Position",
+  "short_name": "Quidditch Quiz",
+  "description": "Find out which Quidditch role you are: Seeker, Chaser, Beater, or Keeper!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9c8011",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon0.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon1.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/hogwarts-logo.jpg",
+      "sizes": "600x600",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Quidditch Quiz Home Screen"
+    }
+  ],
+  "categories": ["entertainment", "games", "quiz"],
+  "lang": "en-US"
+}
