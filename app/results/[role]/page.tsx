@@ -1,14 +1,12 @@
 'use client';
 
-import { Role } from '@/app/types/quiz';
 import { redirect } from 'next/navigation';
 import { useState, use } from 'react';
-import {
-  ROLE_COLORS,
-  ROLE_DESCRIPTIONS,
-  ROLE_ICONS,
-} from '@/app/constants/quiz';
-import { FloatingBackground } from '@/app/components/FloatingBackground';
+
+import { Role } from '@/types/quiz';
+import { ROLE_COLORS, ROLE_DESCRIPTIONS, ROLE_ICONS } from '@/constants/quiz';
+
+import { FloatingBackground } from '@/components/FloatingBackground';
 
 // Note: Since this is a client component, the generateMetadata function would need to be in a separate file
 // A proper implementation would require restructuring this to use a server component for metadata

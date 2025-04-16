@@ -1,12 +1,14 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { RoleScores, Phase, Role } from './types/quiz';
-import { getTopRoles, getInitialScores, getQuestions } from './utils/quiz';
-import { WelcomeScreen } from './components/WelcomeScreen';
-import { QuizQuestion } from './components/QuizQuestion';
 import { useRouter } from 'next/navigation';
-import { FloatingBackground } from './components/FloatingBackground';
+
+import { RoleScores, Phase, Role } from '@/types/quiz';
+import { getTopRoles, getInitialScores, getQuestions } from '@/lib/quiz';
+
+import { WelcomeScreen } from '@/components/WelcomeScreen';
+import { QuizQuestion } from '@/components/QuizQuestion';
+import { FloatingBackground } from '@/components/FloatingBackground';
 
 export default function Home() {
   const router = useRouter();

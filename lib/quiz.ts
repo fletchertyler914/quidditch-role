@@ -1,5 +1,5 @@
 import { RoleScores, Role, Question, QuizData } from '../types/quiz';
-import quizData from '../../data/full_quidditch_quiz.json';
+import quizData from '../data/full_quidditch_quiz.json';
 
 export function getTopRoles(scores: RoleScores): Role[] {
   const max = Math.max(...Object.values(scores));

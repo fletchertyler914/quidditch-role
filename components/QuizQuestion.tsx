@@ -1,5 +1,5 @@
-import { Question, Option } from '../types/quiz';
-import { ANSWER_COLORS } from '../constants/quiz';
+import { Question, Option } from '@/types/quiz';
+import { ANSWER_COLORS } from '@/constants/quiz';
 
 interface QuizQuestionProps {
   question: Question;

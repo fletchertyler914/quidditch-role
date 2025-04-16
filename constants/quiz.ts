@@ -1,4 +1,4 @@
-import { RoleScores } from '../types/quiz';
+import { RoleScores } from '@/types/quiz';
 
 export const ROLE_DESCRIPTIONS: Record<keyof RoleScores, string> = {
   seeker:

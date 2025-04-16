@@ -1,12 +1,9 @@
-import { Role } from '@/app/types/quiz';
-import {
-  ROLE_COLORS,
-  ROLE_DESCRIPTIONS,
-  ROLE_ICONS,
-} from '@/app/constants/quiz';
+import { use } from 'react';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
-import { use } from 'react';
+
+import { Role } from '@/types/quiz';
+import { ROLE_COLORS, ROLE_DESCRIPTIONS, ROLE_ICONS } from '@/constants/quiz';
 
 export default function SharePage({
   params,
