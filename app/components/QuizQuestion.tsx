@@ -12,7 +12,7 @@ interface QuizQuestionProps {
   colorAssignments: number[];
 }
 
-export default function QuizQuestion({
+export function QuizQuestion({
   question,
   currentAnswerIndex,
   setCurrentAnswerIndex,

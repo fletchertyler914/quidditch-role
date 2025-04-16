@@ -2,20 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { RoleScores, Phase, Role } from './types/quiz';
-import { MAGICAL_ELEMENTS } from './constants/quiz';
 import { getTopRoles, getInitialScores, getQuestions } from './utils/quiz';
-import WelcomeScreen from './components/WelcomeScreen';
-import QuizQuestion from './components/QuizQuestion';
+import { WelcomeScreen } from './components/WelcomeScreen';
+import { QuizQuestion } from './components/QuizQuestion';
 import { useRouter } from 'next/navigation';
-
-interface FloatingElement {
-  id: number;
-  element: string;
-  x: number;
-  y: number;
-  size: number;
-  speed: number;
-}
+import { FloatingBackground } from './components/FloatingBackground';
 
 export default function Home() {
   const router = useRouter();
@@ -24,28 +15,8 @@ export default function Home() {
   const [phase, setPhase] = useState<Phase>('start');
   const [tiebreakerStep, setTiebreakerStep] = useState(0);
   const [extraTiebreakerStep, setExtraTiebreakerStep] = useState(0);
-  const [floatingElements, setFloatingElements] = useState<FloatingElement[]>(
-    []
-  );
   const [currentAnswerIndex, setCurrentAnswerIndex] = useState(0);
   const [colorAssignments, setColorAssignments] = useState<number[]>([]);
-
-  // Create floating magical elements
-  useEffect(() => {
-    const elements = [];
-    for (let i = 0; i < 10; i++) {
-      elements.push({
-        id: i,
-        element:
-          MAGICAL_ELEMENTS[Math.floor(Math.random() * MAGICAL_ELEMENTS.length)],
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        size: Math.random() * 0.8 + 0.5,
-        speed: Math.random() * 10 + 10,
-      });
-    }
-    setFloatingElements(elements);
-  }, []);
 
   const questions =
     phase === 'base' || phase === 'tiebreaker' || phase === 'extra_tiebreaker'
@@ -125,31 +96,33 @@ export default function Home() {
 
   if (phase === 'start') {
     return (
-      <WelcomeScreen
-        floatingElements={floatingElements}
-        onStart={() => setPhase('base')}
-      />
+      <div className='relative min-h-screen overflow-hidden'>
+        <WelcomeScreen onStart={() => setPhase('base')} />
+        <FloatingBackground />
+      </div>
     );
   }
 
   if (phase !== 'result' && currentQuestion) {
     return (
-      <QuizQuestion
-        question={currentQuestion}
-        currentAnswerIndex={currentAnswerIndex}
-        setCurrentAnswerIndex={setCurrentAnswerIndex}
-        handleAnswer={handleAnswer}
-        questionNumber={
-          phase === 'base'
-            ? step + 1
-            : phase === 'tiebreaker'
-            ? tiebreakerStep + 1
-            : extraTiebreakerStep + 1
-        }
-        totalQuestions={questions.length}
-        isTiebreaker={phase !== 'base'}
-        colorAssignments={colorAssignments}
-      />
+      <div className='relative min-h-screen overflow-hidden'>
+        <QuizQuestion
+          question={currentQuestion}
+          currentAnswerIndex={currentAnswerIndex}
+          setCurrentAnswerIndex={setCurrentAnswerIndex}
+          handleAnswer={handleAnswer}
+          questionNumber={
+            phase === 'base'
+              ? step + 1
+              : phase === 'tiebreaker'
+              ? tiebreakerStep + 1
+              : extraTiebreakerStep + 1
+          }
+          totalQuestions={questions.length}
+          isTiebreaker={phase !== 'base'}
+          colorAssignments={colorAssignments}
+        />
+      </div>
     );
   }
 

@@ -6,15 +6,17 @@ import {
 } from '@/app/constants/quiz';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
+import { use } from 'react';
 
-export default async function SharePage({
+export default function SharePage({
   params,
 }: {
-  params: { role: Role };
+  params: Promise<{ role: Role }>;
 }) {
   // Validate the role parameter
   const validRoles = ['seeker', 'keeper', 'beater', 'chaser'];
-  const { role } = await params;
+  const { role: _role } = use(params);
+  const role = _role.toLowerCase() as Role;
 
   if (!validRoles.includes(role)) {
     redirect('/');

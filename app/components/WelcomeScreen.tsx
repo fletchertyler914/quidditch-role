@@ -1,21 +1,8 @@
-interface FloatingElement {
-  id: number;
-  element: string;
-  x: number;
-  y: number;
-  size: number;
-  speed: number;
-}
-
 interface WelcomeScreenProps {
-  floatingElements: FloatingElement[];
   onStart: () => void;
 }
 
-export default function WelcomeScreen({
-  floatingElements,
-  onStart,
-}: WelcomeScreenProps) {
+export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
   return (
     <div className='min-h-screen flex flex-col md:flex-row'>
       {/* Left panel */}
@@ -29,22 +16,6 @@ export default function WelcomeScreen({
           </h1>
           <p className='text-amber-200 font-serif'>By Quidditch Captain</p>
         </div>
-
-        {/* Floating elements */}
-        {floatingElements.slice(0, 5).map((el) => (
-          <div
-            key={el.id}
-            className='absolute opacity-40 animate-float text-amber-200'
-            style={{
-              left: `${el.x}%`,
-              top: `${el.y}%`,
-              fontSize: `${el.size}em`,
-              animationDuration: `${el.speed}s`,
-            }}
-          >
-            {el.element}
-          </div>
-        ))}
       </div>
 
       {/* Right panel */}
@@ -67,22 +38,6 @@ export default function WelcomeScreen({
 
         {/* Dividing line */}
         <div className='hidden md:block absolute left-0 top-0 bottom-0 w-px bg-amber-600'></div>
-
-        {/* Floating elements */}
-        {floatingElements.slice(5, 10).map((el) => (
-          <div
-            key={el.id}
-            className='absolute opacity-40 animate-float text-amber-200'
-            style={{
-              left: `${el.x}%`,
-              top: `${el.y}%`,
-              fontSize: `${el.size}em`,
-              animationDuration: `${el.speed}s`,
-            }}
-          >
-            {el.element}
-          </div>
-        ))}
       </div>
     </div>
   );
