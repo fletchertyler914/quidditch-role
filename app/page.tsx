@@ -6,7 +6,7 @@ import { MAGICAL_ELEMENTS } from './constants/quiz';
 import { getTopRoles, getInitialScores, getQuestions } from './utils/quiz';
 import WelcomeScreen from './components/WelcomeScreen';
 import QuizQuestion from './components/QuizQuestion';
-import ResultScreen from './components/ResultScreen';
+import { useRouter } from 'next/navigation';
 
 interface FloatingElement {
   id: number;
@@ -18,12 +18,12 @@ interface FloatingElement {
 }
 
 export default function Home() {
+  const router = useRouter();
   const [step, setStep] = useState(0);
   const [scores, setScores] = useState<RoleScores>(getInitialScores());
   const [phase, setPhase] = useState<Phase>('start');
   const [tiebreakerStep, setTiebreakerStep] = useState(0);
   const [extraTiebreakerStep, setExtraTiebreakerStep] = useState(0);
-  const [finalRoles, setFinalRoles] = useState<Role[]>([]);
   const [floatingElements, setFloatingElements] = useState<FloatingElement[]>(
     []
   );
@@ -90,8 +90,7 @@ export default function Home() {
         // Check for tie
         const topRoles = getTopRoles(newScores);
         if (topRoles.length === 1) {
-          setFinalRoles(topRoles);
-          setPhase('result');
+          router.push(`/results/${topRoles[0].toLowerCase()}`);
         } else {
           setPhase('tiebreaker');
           setTiebreakerStep(0);
@@ -104,8 +103,7 @@ export default function Home() {
         // Check for tie again
         const topRoles = getTopRoles(newScores);
         if (topRoles.length === 1) {
-          setFinalRoles(topRoles);
-          setPhase('result');
+          router.push(`/results/${topRoles[0].toLowerCase()}`);
         } else {
           setPhase('extra_tiebreaker');
           setExtraTiebreakerStep(0);
@@ -117,22 +115,12 @@ export default function Home() {
       } else {
         // Final tie-break
         const topRoles = getTopRoles(newScores);
-        setFinalRoles(topRoles);
-        setPhase('result');
+        router.push(`/results/${topRoles[0].toLowerCase()}`);
       }
     }
 
     // Reset answer index for next question
     setCurrentAnswerIndex(0);
-  }
-
-  function restartQuiz() {
-    setStep(0);
-    setScores(getInitialScores());
-    setPhase('start');
-    setTiebreakerStep(0);
-    setExtraTiebreakerStep(0);
-    setFinalRoles([]);
   }
 
   if (phase === 'start') {
@@ -161,16 +149,6 @@ export default function Home() {
         totalQuestions={questions.length}
         isTiebreaker={phase !== 'base'}
         colorAssignments={colorAssignments}
-      />
-    );
-  }
-
-  if (phase === 'result' && finalRoles.length > 0) {
-    return (
-      <ResultScreen
-        role={finalRoles[0]}
-        floatingElements={floatingElements}
-        onRestart={restartQuiz}
       />
     );
   }

@@ -2,13 +2,13 @@ import { RoleScores } from '../types/quiz';
 
 export const ROLE_DESCRIPTIONS: Record<keyof RoleScores, string> = {
   seeker:
-    'You are a Seeker! Quick, focused, and always chasing the goal. You thrive under pressure and love the thrill of the chase.',
+    'Quick, focused, and always chasing the goal. Thrives under pressure and loves the thrill of the chase.',
   chaser:
-    'You are a Chaser! Energetic, team-spirited, and always moving. You bring people together and keep the game exciting.',
+    'Energetic, team-spirited, and always moving. Brings people together and keeps the game exciting.',
   beater:
-    'You are a Beater! Strong, protective, and always ready to defend your team. You stand up for others and keep danger at bay.',
+    'Strong, protective, and always ready to defend the team. Stands up for others and keeps danger at bay.',
   keeper:
-    'You are a Keeper! Calm, strategic, and always watching the field. You make sure everything runs smoothly and safely.',
+    'Calm, strategic, and always watching the field. Makes sure everything runs smoothly and safely.',
 };
 
 export const ROLE_COLORS: Record<keyof RoleScores, string> = {
