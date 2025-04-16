@@ -1,0 +1,1436 @@
+{
+  "base": [
+    {
+      "id": 1,
+      "text": "You're in the middle of a Quidditch match! What pops into your head first?",
+      "options": [
+        {
+          "text": "Where's the Snitch? Gotta find it fast!",
+          "roles": {
+            "seeker": 0.8,
+            "chaser": 0.1,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Let's score! I'll pass if a teammate is open!",
+          "roles": {
+            "chaser": 0.8,
+            "seeker": 0.1,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Who needs help? I'll protect them!",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.15,
+            "chaser": 0.05,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Guard the goal hoops and watch the whole game!",
+          "roles": {
+            "keeper": 0.8,
+            "beater": 0.1,
+            "seeker": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Which flying style is most like you?",
+      "options": [
+        {
+          "text": "Super fast and smooth – like a hawk diving!",
+          "roles": {
+            "seeker": 0.7,
+            "chaser": 0.2,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Zipping around doing loops and cool spins!",
+          "roles": {
+            "chaser": 0.7,
+            "seeker": 0.2,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Strong and steady, pushing right through the wind!",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Balanced and careful, always watching everything!",
+          "roles": {
+            "keeper": 0.7,
+            "beater": 0.15,
+            "chaser": 0.1,
+            "seeker": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "If your team loses, how do you feel?",
+      "options": [
+        {
+          "text": "Think about what I could've done better.",
+          "roles": {
+            "seeker": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Still had fun playing with my friends!",
+          "roles": {
+            "chaser": 0.8,
+            "seeker": 0.1,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Wish I could've protected my teammates more.",
+          "roles": {
+            "beater": 0.75,
+            "keeper": 0.15,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Try to figure out how the team can improve next time.",
+          "roles": {
+            "keeper": 0.8,
+            "beater": 0.1,
+            "chaser": 0.05,
+            "seeker": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "What's your favorite part of playing a sport?",
+      "options": [
+        {
+          "text": "Figuring things out quickly by myself.",
+          "roles": {
+            "seeker": 0.8,
+            "chaser": 0.1,
+            "keeper": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Working together with the team to win!",
+          "roles": {
+            "chaser": 0.7,
+            "keeper": 0.2,
+            "beater": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Being the team's tough protector.",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.15,
+            "chaser": 0.05,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Thinking ahead so we don't make mistakes.",
+          "roles": {
+            "keeper": 0.75,
+            "seeker": 0.15,
+            "beater": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Which of these sounds most like you, according to your friends?",
+      "options": [
+        {
+          "text": "You're always super focused on your goal.",
+          "roles": {
+            "seeker": 0.8,
+            "keeper": 0.1,
+            "chaser": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "You're great at getting people to work together.",
+          "roles": {
+            "chaser": 0.8,
+            "seeker": 0.1,
+            "keeper": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "You always stick up for others.",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.2,
+            "seeker": 0.0,
+            "chaser": 0.0
+          }
+        },
+        {
+          "text": "You stay calm even when things get tricky.",
+          "roles": {
+            "keeper": 0.8,
+            "beater": 0.1,
+            "seeker": 0.1,
+            "chaser": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Something unexpected happens mid-game! You...",
+      "options": [
+        {
+          "text": "Change plans instantly, looking for a new way.",
+          "roles": {
+            "seeker": 0.7,
+            "chaser": 0.2,
+            "keeper": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Quickly talk with teammates to figure it out together.",
+          "roles": {
+            "chaser": 0.7,
+            "keeper": 0.2,
+            "beater": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Charge right at the problem to clear the way!",
+          "roles": {
+            "beater": 0.8,
+            "chaser": 0.1,
+            "keeper": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Look carefully at what's happening before making a move.",
+          "roles": {
+            "keeper": 0.7,
+            "beater": 0.15,
+            "seeker": 0.1,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "What's your favorite way to practice?",
+      "options": [
+        {
+          "text": "Flying drills by myself, focusing on speed and getting it perfect.",
+          "roles": {
+            "seeker": 0.8,
+            "chaser": 0.1,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Playing practice games (scrimmages) and passing with the team.",
+          "roles": {
+            "chaser": 0.8,
+            "keeper": 0.1,
+            "beater": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Practicing being strong and blocking things.",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Studying game plans and watching old matches to learn.",
+          "roles": {
+            "keeper": 0.7,
+            "seeker": 0.2,
+            "beater": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "When things get exciting and tense, you trust your...",
+      "options": [
+        {
+          "text": "Sharp eyes and super-fast moves.",
+          "roles": {
+            "seeker": 0.85,
+            "chaser": 0.1,
+            "keeper": 0.05,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Knowing what my teammates will do next.",
+          "roles": {
+            "chaser": 0.7,
+            "keeper": 0.15,
+            "seeker": 0.1,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Strength and not giving up!",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.1,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Staying calm and thinking smart.",
+          "roles": {
+            "keeper": 0.75,
+            "beater": 0.1,
+            "seeker": 0.1,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Which Quidditch rule-breaking (foul) annoys you the most?",
+      "options": [
+        {
+          "text": "Cobbing (Too much elbowing) - Hey, get out of my way!",
+          "roles": {
+            "seeker": 0.6,
+            "chaser": 0.3,
+            "beater": 0.1,
+            "keeper": 0.0
+          }
+        },
+        {
+          "text": "Haversacking (Holding the Quaffle while scoring) - That's cheating!",
+          "roles": {
+            "chaser": 0.7,
+            "keeper": 0.2,
+            "seeker": 0.05,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Blatching (Flying just to crash into someone) - Someone could get hurt!",
+          "roles": {
+            "beater": 0.6,
+            "keeper": 0.3,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Stooging (Too many Chasers near the goal) - Follow the plan, people!",
+          "roles": {
+            "keeper": 0.7,
+            "chaser": 0.15,
+            "beater": 0.1,
+            "seeker": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "If you couldn't play, how would you help your team?",
+      "options": [
+        {
+          "text": "Watch the other team to find their weak spots.",
+          "roles": {
+            "seeker": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Lead the cheers and keep everyone excited!",
+          "roles": {
+            "chaser": 0.8,
+            "beater": 0.1,
+            "keeper": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Give tips on how to block and stay safe.",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Watch the game closely and suggest new plays.",
+          "roles": {
+            "keeper": 0.8,
+            "seeker": 0.1,
+            "chaser": 0.05,
+            "beater": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Do you like taking risks?",
+      "options": [
+        {
+          "text": "Only smart risks, like chasing the Snitch when it's worth it!",
+          "roles": {
+            "seeker": 0.8,
+            "keeper": 0.1,
+            "chaser": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Yes! Making bold moves helps us score!",
+          "roles": {
+            "chaser": 0.7,
+            "seeker": 0.2,
+            "beater": 0.1,
+            "keeper": 0.0
+          }
+        },
+        {
+          "text": "I'll take a risk to protect a teammate, even if it's tough!",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.1,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Not really, I like to play it safe and avoid mistakes.",
+          "roles": {
+            "keeper": 0.7,
+            "beater": 0.2,
+            "seeker": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "How do you feel about competing against others?",
+      "options": [
+        {
+          "text": "I focus hard on my own job and winning.",
+          "roles": {
+            "seeker": 0.75,
+            "keeper": 0.1,
+            "chaser": 0.1,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "I love the challenge and the exciting game energy!",
+          "roles": {
+            "chaser": 0.7,
+            "seeker": 0.15,
+            "beater": 0.1,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "It's a chance to show how strong and tough I am!",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.15,
+            "chaser": 0.1,
+            "seeker": 0.05
+          }
+        },
+        {
+          "text": "I study the other team and plan how to beat them.",
+          "roles": {
+            "keeper": 0.8,
+            "seeker": 0.1,
+            "beater": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Which magical creature power would you want most for Quidditch?",
+      "options": [
+        {
+          "text": "The super speed and turning ability of a Hippogriff.",
+          "roles": {
+            "seeker": 0.7,
+            "chaser": 0.25,
+            "keeper": 0.05,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "The way Thestrals fly together perfectly as a team.",
+          "roles": {
+            "chaser": 0.7,
+            "beater": 0.15,
+            "keeper": 0.1,
+            "seeker": 0.05
+          }
+        },
+        {
+          "text": "The tough skin and power of a Blast-Ended Skrewt.",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.15,
+            "chaser": 0.05,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "The sharp eyes and watchfulness of an Augurey (like a magical owl!).",
+          "roles": {
+            "keeper": 0.7,
+            "seeker": 0.2,
+            "beater": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "What's more important for a team?",
+      "options": [
+        {
+          "text": "One amazing player who can win the game alone.",
+          "roles": {
+            "seeker": 0.7,
+            "chaser": 0.2,
+            "keeper": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Everyone working together smoothly like clockwork.",
+          "roles": {
+            "chaser": 0.8,
+            "keeper": 0.1,
+            "beater": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Super strong defense that nobody can get past.",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "A smart game plan that stops mistakes before they happen.",
+          "roles": {
+            "keeper": 0.8,
+            "beater": 0.1,
+            "seeker": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "How do you usually learn something new?",
+      "options": [
+        {
+          "text": "Practice over and over by myself until I get it right.",
+          "roles": {
+            "seeker": 0.75,
+            "keeper": 0.1,
+            "chaser": 0.1,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Jump right in and try it out with other people.",
+          "roles": {
+            "chaser": 0.7,
+            "seeker": 0.15,
+            "beater": 0.1,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Learn the basics first to build a strong start.",
+          "roles": {
+            "beater": 0.6,
+            "keeper": 0.3,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Watch and figure out how it works before trying.",
+          "roles": {
+            "keeper": 0.7,
+            "seeker": 0.2,
+            "beater": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "How do you talk during a game?",
+      "options": [
+        {
+          "text": "Not much; I let my flying do the talking!",
+          "roles": {
+            "seeker": 0.7,
+            "beater": 0.15,
+            "keeper": 0.1,
+            "chaser": 0.05
+          }
+        },
+        {
+          "text": "Lots of cheering and talking to keep the team together.",
+          "roles": {
+            "chaser": 0.8,
+            "keeper": 0.1,
+            "beater": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Shouting warnings and telling people what to do!",
+          "roles": {
+            "beater": 0.75,
+            "chaser": 0.1,
+            "keeper": 0.1,
+            "seeker": 0.05
+          }
+        },
+        {
+          "text": "Giving clear, short instructions about the game plan.",
+          "roles": {
+            "keeper": 0.7,
+            "chaser": 0.15,
+            "seeker": 0.1,
+            "beater": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Uh oh! A Bludger is flying towards a teammate who doesn't see it! You...",
+      "options": [
+        {
+          "text": "Hope someone else gets it; I need to focus on my job (Snitch/Quaffle).",
+          "roles": {
+            "seeker": 0.6,
+            "chaser": 0.3,
+            "keeper": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Yell 'Look out!' while trying to keep playing.",
+          "roles": {
+            "chaser": 0.6,
+            "keeper": 0.2,
+            "seeker": 0.1,
+            "beater": 0.1
+          }
+        },
+        {
+          "text": "Fly over and block it right away, no matter what!",
+          "roles": {
+            "beater": 0.9,
+            "keeper": 0.05,
+            "chaser": 0.05,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Shout for the nearest Beater while watching the whole field.",
+          "roles": {
+            "keeper": 0.6,
+            "beater": 0.2,
+            "chaser": 0.15,
+            "seeker": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "What do you like to do after a match?",
+      "options": [
+        {
+          "text": "Think quietly about how I played.",
+          "roles": {
+            "seeker": 0.7,
+            "keeper": 0.2,
+            "beater": 0.05,
+            "chaser": 0.05
+          }
+        },
+        {
+          "text": "Celebrate wins (or share the sadness of a loss) with the whole team.",
+          "roles": {
+            "chaser": 0.8,
+            "beater": 0.1,
+            "keeper": 0.05,
+            "seeker": 0.05
+          }
+        },
+        {
+          "text": "Check my broom and gear, maybe plan the next practice.",
+          "roles": {
+            "beater": 0.6,
+            "keeper": 0.3,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Watch videos of the game to see how we can get better.",
+          "roles": {
+            "keeper": 0.7,
+            "seeker": 0.2,
+            "chaser": 0.05,
+            "beater": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "What's the MOST important skill for a Quidditch team captain?",
+      "options": [
+        {
+          "text": "Being able to make amazing plays that win the game.",
+          "roles": {
+            "seeker": 0.6,
+            "chaser": 0.3,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Getting the team excited and working well together.",
+          "roles": {
+            "chaser": 0.7,
+            "keeper": 0.15,
+            "beater": 0.1,
+            "seeker": 0.05
+          }
+        },
+        {
+          "text": "Making sure everyone plays safe and follows the rules.",
+          "roles": {
+            "beater": 0.6,
+            "keeper": 0.3,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Thinking up smart plans and making good choices during the game.",
+          "roles": {
+            "keeper": 0.7,
+            "chaser": 0.1,
+            "seeker": 0.1,
+            "beater": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Your team is losing! What are you thinking inside?",
+      "options": [
+        {
+          "text": "Focus harder! Must find that Snitch NOW!",
+          "roles": {
+            "seeker": 0.85,
+            "chaser": 0.05,
+            "keeper": 0.05,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Come on, team! We need more energy and teamwork!",
+          "roles": {
+            "chaser": 0.75,
+            "beater": 0.1,
+            "keeper": 0.1,
+            "seeker": 0.05
+          }
+        },
+        {
+          "text": "Defend! Defend! We can't let them score again!",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Stay calm. What's going wrong? How can we fix it?",
+          "roles": {
+            "keeper": 0.7,
+            "seeker": 0.15,
+            "chaser": 0.1,
+            "beater": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Which part of Quidditch takes the most brain power?",
+      "options": [
+        {
+          "text": "Ignoring everything else while searching for a tiny, fast ball.",
+          "roles": {
+            "seeker": 0.8,
+            "keeper": 0.1,
+            "chaser": 0.05,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Always moving and passing perfectly even when things get crazy.",
+          "roles": {
+            "chaser": 0.7,
+            "seeker": 0.15,
+            "keeper": 0.1,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Guessing where the Bludgers will go and reacting super fast.",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.15,
+            "chaser": 0.1,
+            "seeker": 0.05
+          }
+        },
+        {
+          "text": "Keeping track of all players, the Quaffle, AND Bludgers all at once.",
+          "roles": {
+            "keeper": 0.8,
+            "beater": 0.1,
+            "chaser": 0.05,
+            "seeker": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "text": "You can make a risky play by yourself OR a safer play with the team. You choose...",
+      "options": [
+        {
+          "text": "The risky solo play, if it could win the game fast!",
+          "roles": {
+            "seeker": 0.75,
+            "chaser": 0.2,
+            "beater": 0.05,
+            "keeper": 0.0
+          }
+        },
+        {
+          "text": "The safer team play - playing steady helps win.",
+          "roles": {
+            "chaser": 0.6,
+            "keeper": 0.3,
+            "beater": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "It depends... which choice best protects my teammates?",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "The safer team play - let's not make any mistakes!",
+          "roles": {
+            "keeper": 0.7,
+            "chaser": 0.15,
+            "beater": 0.1,
+            "seeker": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "What's the best sound in Quidditch?",
+      "options": [
+        {
+          "text": "The crowd cheering like crazy when the Snitch is caught!",
+          "roles": {
+            "seeker": 0.8,
+            "chaser": 0.1,
+            "keeper": 0.05,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "The *swoosh* sound when the Quaffle scores a goal!",
+          "roles": {
+            "chaser": 0.8,
+            "keeper": 0.1,
+            "seeker": 0.05,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "The *CRACK* when a Beater hits a Bludger perfectly (away from my team!).",
+          "roles": {
+            "beater": 0.8,
+            "chaser": 0.1,
+            "keeper": 0.05,
+            "seeker": 0.05
+          }
+        },
+        {
+          "text": "The *thump* when the Keeper blocks a shot!",
+          "roles": {
+            "keeper": 0.8,
+            "beater": 0.1,
+            "chaser": 0.05,
+            "seeker": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "After a super long and tough match, you feel...",
+      "options": [
+        {
+          "text": "Tired in my head, but happy if I reached my goal.",
+          "roles": {
+            "seeker": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.05,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Totally wiped out, but excited about how the team played together!",
+          "roles": {
+            "chaser": 0.7,
+            "beater": 0.15,
+            "seeker": 0.1,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "A bit beat up, but proud I helped protect the team.",
+          "roles": {
+            "beater": 0.75,
+            "keeper": 0.15,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Sleepy, but already thinking about the important parts of the game.",
+          "roles": {
+            "keeper": 0.7,
+            "seeker": 0.15,
+            "beater": 0.1,
+            "chaser": 0.05
+          }
+        }
+      ]
+    }
+  ],
+  "tiebreaker": [
+    {
+      "id": 1,
+      "text": "What pushes you the most when things get tough?",
+      "options": [
+        {
+          "text": "Finding the best way forward, quick and by myself.",
+          "roles": {
+            "seeker": 0.8,
+            "chaser": 0.1,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Working with others so we can win together.",
+          "roles": {
+            "chaser": 0.8,
+            "seeker": 0.1,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Standing strong and shielding teammates.",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.15,
+            "chaser": 0.05,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Staying calm and figuring out the puzzle.",
+          "roles": {
+            "keeper": 0.8,
+            "seeker": 0.15,
+            "beater": 0.05,
+            "chaser": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "How do you get ready before a big game?",
+      "options": [
+        {
+          "text": "Quietly think about my game plan.",
+          "roles": {
+            "seeker": 0.8,
+            "keeper": 0.1,
+            "chaser": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Get myself and the team excited and pumped up!",
+          "roles": {
+            "chaser": 0.8,
+            "seeker": 0.1,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Prepare myself to block shots or take hits if I have to.",
+          "roles": {
+            "beater": 0.75,
+            "keeper": 0.15,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Double-check everything and try to stay calm.",
+          "roles": {
+            "keeper": 0.8,
+            "beater": 0.1,
+            "seeker": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Someone praises you for doing well. How do you react?",
+      "options": [
+        {
+          "text": "Just nod and keep going. Praise isn't important.",
+          "roles": {
+            "seeker": 0.8,
+            "keeper": 0.1,
+            "chaser": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Yay! Let's celebrate with the team!",
+          "roles": {
+            "chaser": 0.8,
+            "seeker": 0.1,
+            "keeper": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Say thanks, but keep focused on protecting the team.",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.2,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Say the whole team deserves the praise.",
+          "roles": {
+            "keeper": 0.7,
+            "chaser": 0.2,
+            "beater": 0.1,
+            "seeker": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "What kind of advice helps you the most?",
+      "options": [
+        {
+          "text": "Short and clear advice - I'll figure it out quietly.",
+          "roles": {
+            "seeker": 0.75,
+            "keeper": 0.15,
+            "chaser": 0.05,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Exciting advice that makes me feel ready to go!",
+          "roles": {
+            "chaser": 0.75,
+            "seeker": 0.1,
+            "beater": 0.1,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Honest advice that helps me protect the team better.",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.2,
+            "seeker": 0.1,
+            "chaser": 0.0
+          }
+        },
+        {
+          "text": "Advice with lots of details about how to do better next time.",
+          "roles": {
+            "keeper": 0.8,
+            "seeker": 0.1,
+            "beater": 0.05,
+            "chaser": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "When you're on a team, you usually...",
+      "options": [
+        {
+          "text": "Keep your eyes on your own important job.",
+          "roles": {
+            "seeker": 0.8,
+            "chaser": 0.1,
+            "keeper": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Keep everyone cheerful and moving fast.",
+          "roles": {
+            "chaser": 0.75,
+            "seeker": 0.1,
+            "keeper": 0.1,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Watch out for danger and protect teammates.",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.15,
+            "seeker": 0.05,
+            "chaser": 0.0
+          }
+        },
+        {
+          "text": "Watch the whole game and help decide what to do.",
+          "roles": {
+            "keeper": 0.8,
+            "beater": 0.1,
+            "chaser": 0.1,
+            "seeker": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "extra_tiebreaker": [
+    {
+      "id": 1,
+      "text": "Which idea fits your Quidditch style best?",
+      "options": [
+        {
+          "text": "Eyes on the prize – always!",
+          "roles": {
+            "seeker": 0.85,
+            "keeper": 0.05,
+            "chaser": 0.05,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Being energetic helps us win!",
+          "roles": {
+            "chaser": 0.8,
+            "seeker": 0.1,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Nobody gets past me!",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.1,
+            "seeker": 0.05,
+            "chaser": 0.05
+          }
+        },
+        {
+          "text": "Stay calm and let the game come to you.",
+          "roles": {
+            "keeper": 0.8,
+            "chaser": 0.1,
+            "seeker": 0.05,
+            "beater": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "When everything is chaotic, what do you trust most?",
+      "options": [
+        {
+          "text": "My quick feelings and fast moves (instincts and reflexes).",
+          "roles": {
+            "seeker": 0.75,
+            "beater": 0.1,
+            "chaser": 0.1,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "How well I work with my teammates.",
+          "roles": {
+            "chaser": 0.8,
+            "seeker": 0.05,
+            "keeper": 0.1,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Being ready to block or take a hit for the team.",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.15,
+            "chaser": 0.05,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Being able to change plans calmly.",
+          "roles": {
+            "keeper": 0.75,
+            "seeker": 0.1,
+            "chaser": 0.1,
+            "beater": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "You're behind in the game. You...",
+      "options": [
+        {
+          "text": "Keep going and ignore being scared.",
+          "roles": {
+            "seeker": 0.8,
+            "chaser": 0.1,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "Get the team all fired up!",
+          "roles": {
+            "chaser": 0.8,
+            "seeker": 0.05,
+            "keeper": 0.1,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Focus extra hard on defending the goals.",
+          "roles": {
+            "beater": 0.7,
+            "keeper": 0.25,
+            "chaser": 0.05,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "Figure out what needs to change in our plan.",
+          "roles": {
+            "keeper": 0.75,
+            "seeker": 0.1,
+            "beater": 0.05,
+            "chaser": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Someone says you didn't play well. You...",
+      "options": [
+        {
+          "text": "Ignore it – I know I'm good.",
+          "roles": {
+            "seeker": 0.8,
+            "keeper": 0.1,
+            "chaser": 0.1,
+            "beater": 0.0
+          }
+        },
+        {
+          "text": "Tell a joke about it and keep playing.",
+          "roles": {
+            "chaser": 0.75,
+            "seeker": 0.1,
+            "keeper": 0.1,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "Try even harder – I'll show them!",
+          "roles": {
+            "beater": 0.8,
+            "chaser": 0.1,
+            "keeper": 0.05,
+            "seeker": 0.05
+          }
+        },
+        {
+          "text": "Think about what they said and learn from it.",
+          "roles": {
+            "keeper": 0.75,
+            "seeker": 0.1,
+            "chaser": 0.05,
+            "beater": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "When people remember you, you want them to think of you as...",
+      "options": [
+        {
+          "text": "The player with amazing sharp eyes.",
+          "roles": {
+            "seeker": 0.85,
+            "chaser": 0.05,
+            "beater": 0.05,
+            "keeper": 0.05
+          }
+        },
+        {
+          "text": "The heart of the team, always cheering everyone on.",
+          "roles": {
+            "chaser": 0.8,
+            "keeper": 0.1,
+            "seeker": 0.05,
+            "beater": 0.05
+          }
+        },
+        {
+          "text": "The tough shield that nobody could get past.",
+          "roles": {
+            "beater": 0.8,
+            "keeper": 0.15,
+            "chaser": 0.05,
+            "seeker": 0.0
+          }
+        },
+        {
+          "text": "The calm player with the smart plans.",
+          "roles": {
+            "keeper": 0.8,
+            "seeker": 0.1,
+            "chaser": 0.05,
+            "beater": 0.05
+          }
+        }
+      ]
+    }
+  ]
+}
