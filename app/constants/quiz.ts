@@ -19,10 +19,10 @@ export const ROLE_COLORS: Record<keyof RoleScores, string> = {
 };
 
 export const ROLE_ICONS: Record<keyof RoleScores, string> = {
-  seeker: '🥇', // Represents the Golden Snitch
-  chaser: '🥅', // Represents the goal hoops
-  beater: '🏏', // Represents the Beater's bat
-  keeper: '🧤', // Represents the Keeper's gloves
+  seeker: '⚡', // Lightning bolt for Harry Potter's scar + speed
+  chaser: '🏈', // Football shape similar to Quaffle
+  beater: '🏏', // Cricket bat similar to Beater's bat
+  keeper: '🛡️', // Shield to represent defensive role
 };
 
 export const MAGICAL_ELEMENTS = [
@@ -30,6 +30,10 @@ export const MAGICAL_ELEMENTS = [
   '⚡', // Lightning bolt
   '🧹', // Broomstick
   '🔮', // Crystal ball
+  '🌟', // Star
+  '🪄', // Magic wand
+  '🦉', // Owl
+  '📜', // Scroll
 ];
 
 export const ANSWER_COLORS = [

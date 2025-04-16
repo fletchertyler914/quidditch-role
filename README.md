@@ -1,8 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧙‍♂️ Quidditch Role Quiz
 
-## Getting Started
+A delightful and interactive web application built as a fun family project with my kids! Inspired by [WizardMore](https://wizardmore.com/)'s magical quizzes, we created our own special quiz to help young witches and wizards discover their perfect Quidditch team position.
 
-First, run the development server:
+## ✨ About the Quiz
+
+Our quiz uses a weighted scoring system to match players with their ideal Quidditch role:
+
+- 🏃‍♂️ **Seeker**: The quick and focused Snitch-catcher
+- 🏈 **Chaser**: The team-oriented scorer
+- 🛡️ **Beater**: The protective defender
+- 🥅 **Keeper**: The strategic goal guardian
+
+Each answer contributes different weights to each role, helping determine the perfect match for your playing style! Check out our [full quiz questions and scoring system](data/full_quidditch_quiz.json) to see how it works.
+
+## 🎮 Features
+
+- 🎯 24 personality-based questions
+- 🎲 Tiebreaker questions for close matches
+- 🎨 Kid-friendly, colorful interface
+- 🎵 Magical sound effects and animations
+- 📱 Mobile-friendly design for playing anywhere
+- 🔒 Safe and family-friendly content
+
+## 🚀 Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +42,50 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to start your Quidditch journey!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js](https://nextjs.org) - The React framework for magical web applications
+- [TypeScript](https://www.typescriptlang.org/) - For type-safe spells
+- [Tailwind CSS](https://tailwindcss.com) - For enchanted styling
+- [shadcn/ui](https://ui.shadcn.com/) - Beautiful and accessible components
+- Modern web technologies and best practices
 
-## Learn More
+## 🎨 UI Components
 
-To learn more about Next.js, take a look at the following resources:
+This project uses [shadcn/ui](https://ui.shadcn.com/), a collection of re-usable components built using:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Radix UI](https://www.radix-ui.com/) - For accessible primitives
+- [Tailwind CSS](https://tailwindcss.com) - For styling
+- [Class Variance Authority](https://cva.style/docs) - For component variants
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The components are beautifully styled and fully customizable, perfect for creating a magical quiz experience!
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We welcome contributions from fellow wizards and witches! Whether it's:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Adding new quiz questions
+- Improving animations
+- Fixing bugs
+- Enhancing the magical experience
+
+Please feel free to submit a pull request!
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## ⚡ Acknowledgments
+
+- Inspired by the wonderful [WizardMore](https://wizardmore.com/) quizzes
+- Built as a fun family coding project with my kids
+- Special thanks to all the magical contributors
+- Created with love for young Quidditch enthusiasts everywhere
+
+---
+
+_Note: This is a fan project created for educational and entertainment purposes._
